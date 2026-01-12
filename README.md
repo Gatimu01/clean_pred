@@ -1,4 +1,4 @@
-LLM-based Scientific Title Forecasting Pipeline
+**LLM-based Scientific Title Forecasting Pipeline**
 
 This repository contains a complete pipeline for forecasting future scientific paper titles using large language models (LLMs), based on historical author publication records and automatically extracted future work sections from arXiv papers.
 
@@ -18,6 +18,7 @@ The system supports:
 
 
 .
+
 ├── arxiv_corpus.py           # arXiv API downloader (monthly corpus builder)
 
 ├── paper_load_fw.py          # Loader with future-work support
@@ -28,17 +29,17 @@ The system supports:
 
 ├── Evaluation/
 
-│   ├── evaluator.py              # Evaluation logic
+    ├── evaluator.py              # Evaluation logic
 
-│   ├── metrics.py                # Similarity metrics (BERTScore, cosine, BM25)
+    ├── metrics.py                # Similarity metrics (BERTScore, cosine, BM25)
 
-│   └── corpus.py                 # Corpus utilities
+    └── corpus.py                 # Corpus utilities
 
-│   ├── evaluator.py              # Evaluation logic
+    ├── evaluator.py              # Evaluation logic
 
-│   ├── metrics.py                # Similarity metrics (BERTScore, cosine, BM25)
+    ├── metrics.py                # Similarity metrics (BERTScore, cosine, BM25)
 
-│   └── corpus.py                 # Corpus utilities
+    └── corpus.py                 # Corpus utilities
 
 ├── main.py                   # End-to-end forecasting pipeline
 
@@ -54,7 +55,7 @@ The system supports:
 
 
 
-1. Build arXiv Corpus
+**1. Build arXiv Corpus**
 
 Uses the official arXiv Atom API with:
   Month splitting to bypass 2000-result limit
