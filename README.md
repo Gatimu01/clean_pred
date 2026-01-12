@@ -45,11 +45,11 @@ The system supports:
 
 ├── data/
 
-│   ├── raw/                  # Raw arXiv JSONL files
+    ├── raw/                  # Raw arXiv JSONL files
 
-│   ├── processed/            # Structured datasets
+    ├── processed/            # Structured datasets
 
-│   └── predictions/          # LLM outputs
+    └── predictions/          # LLM outputs
 
 └── README.md
 
@@ -64,4 +64,10 @@ Uses the official arXiv Atom API with:
   
   Deduplication by arXiv ID
   
-  Optional streaming to disk (JSONL)
+  For example:
+
+    from arxiv_corpus import ArxivCorpusFetcher
+    
+    fetcher = ArxivCorpusFetcher()
+    fetcher.fetch_month(2023, 1, save_file="data/raw/2023_01.jsonl", return_list=False)
+
