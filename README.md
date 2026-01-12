@@ -19,21 +19,37 @@ The system supports:
 
 .
 ├── arxiv_corpus.py           # arXiv API downloader (monthly corpus builder)
+
 ├── paper_load_fw.py          # Loader with future-work support
+
 ├── future_work_extractor.py # LaTeX + GROBID future work extraction pipeline
+
 ├── prompt.py                 # TitlePredictor (LLM interface)
+
 ├── Evaluation/
+
 │   ├── evaluator.py              # Evaluation logic
+
 │   ├── metrics.py                # Similarity metrics (BERTScore, cosine, BM25)
+
 │   └── corpus.py                 # Corpus utilities
+
 │   ├── evaluator.py              # Evaluation logic
+
 │   ├── metrics.py                # Similarity metrics (BERTScore, cosine, BM25)
+
 │   └── corpus.py                 # Corpus utilities
+
 ├── main.py                   # End-to-end forecasting pipeline
+
 ├── data/
+
 │   ├── raw/                  # Raw arXiv JSONL files
+
 │   ├── processed/            # Structured datasets
+
 │   └── predictions/          # LLM outputs
+
 └── README.md
 
 
